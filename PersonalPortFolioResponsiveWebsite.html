@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Port Folio Responsive Website</title>
+    <style>
+        main{
+            border: 1px solid;
+            display: flex;
+            height: auto;
+            
+            flex-direction: column;
+        }
+        header{
+            border: 1px solid red;
+            display: flex;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            background-color: black;
+        }
+        .Fcc{
+            border: 1px solid;
+            height: 100%;
+            width: 40%;
+            display: flex;
+
+        }
+        .Fcc>.Text{
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .Fcc>.Text>div{
+            border: 1px solid wheat;
+            height: 50%;
+            width: 100%;
+            color: white;
+        }
+        .Fcc>.Img{
+            border: 1px solid white;
+            height: 100%;
+            width: 20%;
+        }
+       
+        .Sign{
+            border: 1px solid;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            justify-content: space-between;
+            
+            
+        }
+        .one{
+           border: 1px solid yellow;
+           height: 80%;
+           width: 20%;
+           border-radius: 10px;
+           background-color: rgb(88, 90, 92);
+           
+        }
+        .one>a{
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+
+        }
+        nav{
+            border: 1px solid red;
+            background-color: red;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 70px;
+        }
+        .Menu{
+            border: 1px solid black;
+            width: 50%;
+            height: 95%;
+            display: flex;
+        }
+        .Menu>.About{
+           border: 1px solid;
+           width: 30%;
+           text-align: center;
+           
+           font-size: larger;
+           font-weight: 900;
+           
+           
+        }
+        .Menu>.About>a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        .Container1{
+            border: 1px solid;
+            background-color: rgb(63, 60, 60);
+            position: absolute;
+            top:125px;
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: column;
+             color: white;
+        }
+        .Container1>p{
+            
+            line-height: 0.8;
+        }
+        .Project{
+            border: 1px solid red;
+            height: 1550px;
+            width: 100%;
+            background-color: rgb(42, 42, 101);
+            position: relative;
+            top:625px;
+        
+            display: flex;
+            flex-direction: row;
+        }
+        .Project>p{
+            border-bottom: 2px solid white;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+            position: absolute;
+            left: 40%;
+            
+        }
+        .Project>.Images{
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 1400px;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+        }
+        .Project>.Images>.Row{
+            border: 1px solid white;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        .Project>.Images>.Row>.column{
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 90%;
+            margin: 10px;
+            text-align: center;
+            
+        }
+        .Project>.Images>.Row>.column>.Cone{
+            border: 1px solid;
+            height: 70%;
+            width: 100%;
+            
+        }
+        .Ctwo>a{
+            color: white;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .Project>.Images>.Row>.column>.Ctwo{
+            border: 1px solid;
+            height: 30%;
+            width: 100%;
+            background-color: rgb(48, 46, 46);
+            color: white;
+        }
+        
+        
+        
+        
+        @media screen and ( max-width:700px) {
+           .Fcc {
+               width: 30%;
+            }
+            .Sign{
+                width: 70%;
+            }
+            .Menu{
+                width: 90%;
+            }
+            .Project>.Images>.Row>{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .Project>.Images>.Row>.column{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body> 
+    <main>
+    <header>
+    <div class="Fcc" > 
+            <div class="Img"></div>
+            <div class="Text"> 
+                <div style="color: white;"><b>FCC:Personal &nbsp; PortFolio </b></div>
+                <div >freeCodeCamp.org <input type="button" value="+Follow"></div>
+           </div>
+        </div>
+        <div class="Sign">
+            <div class="one"></div>
+            <div class="one"><a href="">View in Editor</a></div>
+            <div class="one"><a href="">Sign Up</a></div>
+            <div class="one"><a href="">Log In</a></div>
+        </div>
+    </header>
+    <nav>
+        <div class="Menu">
+            <div class="About"><a href="" >About</a></div>
+            <div class="About"><a href=""> Work</a></div>
+            <div class="About"><a href=""> Contact</a></div>
+        </div>
+    </nav>
+    <div class="Container1">
+        <p style="font-weight: 900; font-size: xx-large; margin-top: 20%;">Hey I am Mimic</p>
+        <p style="color: red;">a web developer</p>
+
+    </div>
+
+    <div class="Project">
+        <p>These are some of my projects</p>
+        <div class="Images">
+        <div class="Row">
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img style="height: 100%" width="100%" src="../Images/tribute page.png" alt="Tribute Page"> </a></div>
+                <div class="Ctwo"><a href="">Tribute Page </a> </div>
+            </div>
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img style="height: 100%" width="100%" src="../Images/random-quote-machine.png" alt="Random Quote Machine"> </a></div>
+                <div class="Ctwo"><a href="">Random Quote Machine </a> </div>
+            </div>
+            
+        </div>
+        <div class="Row">
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img  style="height: 100%" width="100%" src="../Images/JavaScript Calculator.png" alt="JavaScript Calculator"> </a></div>
+                <div class="Ctwo"><a href="">JavaScript Calculator</a></div>
+            </div>
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img style="height: 100%" width="100%" src="../Images/Map Data Across the Globe.jpg" alt="Map Data Across the Globe" ></a></div>
+                <div class="Ctwo"><a href="">Map Data Across the Globe</a></div>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img style="height: 100%" width="100%" src="../Images/wiki.png" alt="Wikipedia Viewer" ></a> </div>
+                <div class="Ctwo"><a href="">Wikipedia Viewer</a></div>
+            </div>
+            <div class="column">
+                <div class="Cone"><a  href="../CSS/PersonalPortFolio.css"><img  style="height: 100%" width="100%" src="../Images/tic tac toe.png" alt="Tic Tac Toe Game"></a></div>
+                <div class="Ctwo"><a href="">Tic Tac Toe Game</a> </div>
+            </div>
+        </div>
+        <div class="Row"> <a style="color:white"  href="">ShowAll</a></div>
+    </div>
+
+       
+    </div>
+</main>
+</body>
+</html>
